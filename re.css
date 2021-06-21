@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #f12020;
+    background-image: url(pics/coff-page/background1.jpg);
+    background-size: cover;
+}
+
+.receipt-box{
+    background-color: white;
+    width: 90%;
+    box-shadow: 0px 0px 30px 15px rgba(0,0,0,0.2);
+    margin-top: 100px;
+}
+
+.row{
+    margin: 0;
+}
+
+.receipt-date{
+    margin-left: 50px;
+    text-align: right;
+}
+
+.receipt-btn{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+
+.cvv-i input{
+    width: 90px;
+}

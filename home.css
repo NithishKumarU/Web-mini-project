@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Montserrat' ,sans-serif;
+    
+}
+body{
+    /* overflow: hidden; */
+    background-color: #000000;
+    background-image: url("Icons/keyboard.jpg");
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    /* overflow: hidden; */
+}
+
+/* .s-body{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+} */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 1%;
+    width: 100%;
+    height: 8vh;
+    background-color: rgba(black, 1);
+    /* position: fixed; */
+    z-index: 10;
+    /* background: linear-gradient(0deg, rgba(57,57,57,1) 0%, rgba(0,0,0,1) 100%); */
+}
+
+header h1{
+    color: white;
+    font-family: kaushan Script;
+    font-size: 40px;
+    margin-right: 550px;
+
+    cursor: pointer;
+}
+
+.nav-links{
+    list-style: none;
+    margin-left: 50px;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a{
+    transition: all 0.4s ease 0s;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-links li a:hover{
+    color: #f12020;
+}
+
+.under-line::after{
+    content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f12020;
+    transition: width 0.3s;
+}
+
+.under-line:hover::after
+{
+    width: 100%;
+    transition: width 0.3s;
+}
+
+.login-btn{
+    padding: 9px 30px;
+    background-color: #f12020;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 18px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    width: 130px;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+
+.login-btn:hover{
+    background-color: white;
+    transition: all 0.3s;
+    color: black;
+    outline: none;
+    border: none;
+}
+
+.logo{
+    width: 74.67px;
+    height: 58px;
+    cursor: pointer;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.container{
+    display: grid;
+    grid-template-columns:1fr 0.2fr 1fr;
+    height: 450px;
+    /* border: white solid 1px; */
+    margin-top: 0;
+}
+
+.one, .two, .or{
+    z-index: 3;
+    color: white;
+    /* border: 1px solid white; */
+}
+.or h1{
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    margin-top: 180px;
+    font-family: kaushan Script;
+    font-size: 80px;
+}
+
+.cup{
+    height: 400px;
+    border-radius: 20px;
+}
+
+.con{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 25px;
+    bottom: 0;
+    left: 150px;
+    right: 0;
+    perspective: 800;
+    -webkit-perspective: 800;
+    border-radius: 20px;
+}
+
+.card{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 0.9s ease;
+    border-radius: 20px;
+}
+
+.back{
+    position: relative;
+    border-radius: 20px;
+    bottom: 404px;
+    transform: rotateY(180deg);
+    height: 404px;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.order-btn{
+    position: absolute;
+    top: 55%;
+    left: 17%;
+    padding: 9px 30px;
+    background-color: #f12020;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 18px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    width: 270px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+
+}
+
+/* .cafebtn:hover{
+    transition: all 0.3s;
+    color: white;
+    transform: scale(1.1);
+} */
+
+.order-btn a:hover{
+    transition: all 0.3s;
+    color: white;
+    transform: scale(1.1);
+
+}
+
+.order-btn:hover{
+    background-color: #f12020;
+    transition: all 0.3s;
+    color: white;
+    transform: scale(1.1);
+
+}
+
+.join-btn{
+    position: absolute;
+    top: 60%;
+    left: 17%;
+    padding: 9px 30px;
+    background-color: #f12020;
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 18px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    width: 270px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+
+.join-btn:hover{
+    background-color: #f12020;
+    transition: all 0.3s;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+.hero{
+    height: 250px;
+    width: 100%;
+    padding-top: 30px;
+    color: white;
+}
+
+.top-head{
+
+    
+    backdrop-filter: blur(15px);
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border: white solid 1px; */
+    width: 1100px;
+    margin-left: 210px;
+    margin-bottom: 0;
+}
+
+.top-head h1{
+    font-size: 80px;
+    font-family: kaushan Script,'Roboto', sans-serif;
+    border: white solid 1px;
+}
+
+.top-head h2{
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 0;
+    color: #cccccc;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.detail-box{
+    background-color: white;
+    height: 740px;
+    padding-bottom: 50px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 34px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.main-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 270px 270px;
+    /* border: black solid 1px; */
+    padding: 0 150px;
+    text-align: center;
+
+}
+
+.what-icon{
+    height: 50px;
+}
+
+.one-1,.two-2,.three-3,.four-4,.five-5,.six-6{
+    justify-content: center;
+    padding: 30px 60px;
+    font-size: 17px;
+    line-height: 25px;
+    /* border: orange solid 1px; */
+}
+
+.question-box{
+    background-image: url("Icons/question.jpg");
+    background-size: 1500px 300px ;
+
+    background-color: black;
+    text-align: center;
+    height: 300px;
+}
+
+.q-main{
+    font-size: 40px;
+    color: white;
+    padding-top: 50px;
+}
+
+.q-sub{
+    padding-top: 20px;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.fb-box [type="text"]{
+    font-size: 18px;
+}
+
+.fb-box input{
+   width: 50%; 
+   height: 40px;
+   border-radius: 5px;
+   border: none;
+}
+
+.fb-btn{
+    height: 40px;
+    width: 10%;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #f12020;
+    border: none;
+    cursor: pointer;
+}
+
+.fb-btn:hover{
+    background-color: brown;
+}
+
+
+footer{
+    /* position: fixed; */
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.main-content{
+    display: flex;
+}
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .content:after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #f12020;
+    top: -10px;
+}
+
+.left .content p{
+    text-align: justify;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+#social-btn:hover{
+    color: white;
+    background-color: #f12020;
+}
+
+.left .content .social a{
+    padding: 0 2px;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span :hover{
+    background: #f12020;
+}
+
+.center .content .fas{
+    font-size: 1.4375rem;
+    background-color: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.center .content .fas:hover{
+    background: #f12020;
+}
+
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 15px 0;
+}
+
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form .msg{
+    margin-top: 10px;
+}
+
+.right form input, .right form .msgForm{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background: #000;
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    footer{
+      position: relative;
+      bottom: 0px;
+    }
+    .main-content{
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .main-content .box{
+      margin: 5px 0;
+    }
+}
+
+.des{
+    background-color: white;
+    height: 500px;
+    padding: 0 300px;
+}
+
+.d-heading{
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: 800px;
+}
+
+.d-content{
+    padding-top: 20px;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.avail{
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+    background-image: url("Icons/avail.jpg");
+}
+
+.a-one, .a-two, .a-three{
+    text-align: center;
+    padding: 60px 100px;
+}
+
+.a-num{
+    font-size: 80px;
+    padding-bottom: 30px;
+}
+
+.a-text{
+    font-size: 25px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.des-c{
+    height: 400px;
+    background-image: url("Icons/coffee-cup.jpg");
+    color: white;
+    padding: 0 300px;
+    border: white solid 1px;
+}
+
+.dc-heading{
+    padding-top: 50px;
+    font-size: 35px;
+    font-weight: 800px;
+}
+
+.dc-content{
+    padding-top: 20px;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.des-d{
+    height: 700px;
+    background-color: white;
+
+}
+
+
+
+.cafe-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 50px 300px 100px;
+    padding: 20px 100px;
+}
+
+.c-1,.c-2,.c-3,.c-4,.c-5,.c-6,.c-7,.c-8{
+    text-align: center;
+}
+
+.c-7,.c-8{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.table-img{
+    height: 300px;
+    border-radius: 10px;
+    z-index: -2;
+}
+
+.menu p{
+    position: absolute;
+    color: white;
+}
+
+.c-1 p{
+    left: 17%;
+    top: 42.75%;
+    font-size: 38px;
+    height: 300px;
+}
+
+.c-2 p{
+    left: 45.5%;
+    top: 42.75%;
+    font-size: 38px;
+}
+
+.c-3 p{
+    left: 75.5%;
+    top: 42.75%;
+    font-size: 38px;
+}
+
+.c-4 p{
+    left: 17%;
+    top: 51.7%;
+    font-size: 38px;
+}
+
+.c-5 p{
+    left: 45.5%;
+    top: 51.7%;
+    font-size: 38px;
+}
+
+.c-6 p{
+    left: 74%;
+    top: 51.7%;
+    font-size: 38px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c6e87f4ab3.js" crossorigin="anonymous"></script>
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" href="game1.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="vertical-nav bg-white border" id="sidebar" >
+        <div class="py-4 px-3 mb-4 bg-light">
+            <div class="media d-flex align-items-center">
+                <img src="Icons/svg/account.svg" alt="..." width="80" height="80" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+                <div class="media-body">
+                    <h4 class="m-0">Admin</h4>
+                    <p class="font-weight-normal text-muted mb-0"></p>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Dashboard</p>
+
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="game.html" class="nav-link text-dark bg-light"><i class="fa fa-newspaper mr-3 fa-fw" style="color: #f12020;"></i>New Releases</a>
+            </li>
+            <li class="nav-item active">
+                <a href="#" class="nav-link text-dark"><i class="fa fa-fire mr-3 fa-fw" style="color: #f12020;"></i>Popular</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark"><i class="fa fa-info-circle mr-3 fa-fw" style="color: #f12020;"></i>Coming Soon</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark"><i class="fa fa-pen-square mr-3 fa-fw" style="color: #f12020;"></i>Reviews</a>
+            </li>
+        </ul>
+
+        <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+
+        <ul class="nav flex-column bg-white mb-0">
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark"><i class="fa fa-user-alt mr-3 fa-fw " style="color: #f12020;"></i>Profile</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark"><i class="fa fa-comment-alt mr-3 fa-fw" style="color: #f12020;"></i>Chat</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link text-dark"><i class="fa fa-gamepad mr-3 fa-fw" style="color: #f12020;"></i>Game Library</a>
+            </li>
+        </ul>
+        <div class="align-item-end d-flex justify-content-center align-items-end" style="height: 200px;">
+         
+                <a class="btn btn-danger" href="login.php" role="button" ><i class="fa fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a>
+            
+        </div>
+        
+        
+    </div>
+
+    <div class="page-content p-5" id="content">
+        <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"><i class="fa fa-bars mr-2"></i><small class="text-uppercase font-weight-bold">Toggle</small></button>
+
+        <h2 class="display-4 text-white">Popular</h2>
+
+        <div class="separator "></div>
+        
+        <div class="body-m">
+            <div class="lcontainer">
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/csgo.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/valorant.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/warzone.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/apex.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/lol.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/rdr2.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/dota.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/amongus.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/pubg.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/minecraft.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/fortnight.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/fallguys.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/division.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/godofwar.jpg)"></div>
+                </div>
+                <div class="game-card">
+                    <div class="game-card__cover" style="background-image:url(pics/got.jpg)"></div>
+                </div>
+            </div>
+        </div>
+
+    
+
+        
+    </div>
+
+    
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
