@@ -22,7 +22,7 @@ if(isset($_POST['login'])){
                 $_SESSION['userid']=$row["username"];
                 $_SESSION['sname']=$row["name"];
                 $_SESSION['count']=0;
-                echo '<script>window.location= "home.php?login=success"</script>';
+                echo '<script>window.location= "Index.php?login=success"</script>';
             }
             else
             {
@@ -91,7 +91,7 @@ if(isset($_POST['register']))
         <h1>Geek's Cafe</h1>
         <nav>
             <ul class="nav-links">
-                <li><a href="home.php" class="under-line" >Home</a></li>
+                <li><a href="Index.php" class="under-line" >Home</a></li>
                 <li><a href="" class="under-line" >Services</a></li>
                 <li><a href="" class="under-line" >About Us</a></li>
                 <li><a href="" class="under-line" >Contact</a></li>
