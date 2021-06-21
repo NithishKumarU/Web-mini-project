@@ -130,7 +130,7 @@ include("db.php");
         </ul>
         <div class="side-buttons" >
          
-            <a class="btn btn-danger" href="Home.php" role="button" ><i class="fas fa-home"></i></i>&nbsp;&nbsp;Home</a>
+            <a class="btn btn-danger" href="Index.php" role="button" ><i class="fas fa-home"></i></i>&nbsp;&nbsp;Home</a>
             <a class="btn btn-danger" href="logout.php" role="button" ><i class="fa fa-sign-out-alt"></i>&nbsp;&nbsp;Logout</a>
 
             
