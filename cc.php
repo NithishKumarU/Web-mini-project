@@ -95,7 +95,7 @@ if(isset($_POST['add']))
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="Home.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="Index.php">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#recom">Recommended</a>
