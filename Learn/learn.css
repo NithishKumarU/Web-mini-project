@@ -1,0 +1,17 @@
+body{
+    background-color: chocolate;
+}
+
+one{
+    background-color: black;
+}
+
+three{
+    float: left;
+    width:50%;
+}
+
+four{
+    float: right;
+    width: 50%;
+}
